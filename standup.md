@@ -37,3 +37,4 @@ Attendees:
 - notes here
 
 ## Closing notes
+- notes here

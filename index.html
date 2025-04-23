@@ -3,11 +3,23 @@
     <head>
         <title>Meeting Minutes</title>
         <meta name="author" content="Andrew Zhao">
-        <link rel="icon" href="favicon.ico" />
+        <link rel="icon" href="favicon.ico"/>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: rgb(221, 248, 241);
+            }
+        </style>
     </head>
     <body>
+        <div class="fixed-banner">Reminder: Submit feedback by EOD</div>
+        <h1 class="they-dont-know">Nobody will know</h1>
+
         <header>
-            <h1>First Team Meeting</h1>
+            <h1 class="bebas-neue-regular">First Team Meeting</h1>
             <h3>4/15/2025</h3>
             <nav>
                 <a href="#agenda">Agenda</a>
@@ -18,27 +30,28 @@
         </header>
         <hr>
         <main>
-            <section id="agenda">
-                    <h2><span>Agenda</span></h2>
-                <div>
-                    <ol>
-                        <li>Check in</li>
-                        <li>Last time</li>
-                        <li>Stand ups</li>
-                        <li>Closing</li>
-                    </ol>
-                </div>
-            </section>
-            <hr>
-            <section id="Checkin">
-                <h2>People who attended</h2>
-                <ul>
-                    <li>Tim</li>
-                    <li>Lian</li>
-                    <li>Chris</li>
-                    <li>Billy</li>
-                </ul>
-            </section>
+            <div class="agenda-checkin">
+                <section id="agenda">
+                        <h2><span>Agenda</span></h2>
+                    <div>
+                        <ol>
+                            <li>Check in</li>
+                            <li>Last time</li>
+                            <li>Stand ups</li>
+                            <li>Closing</li>
+                        </ol>
+                    </div>
+                </section>
+                <section id="Checkin">
+                    <h2>People who attended</h2>
+                    <ul>
+                        <li>Tim</li>
+                        <li>Lian</li>
+                        <li>Chris</li>
+                        <li>Billy</li>
+                    </ul>
+                </section>
+            </div>
             <hr>
             <section id="documentation">
                 <h2>Last time</h2>
@@ -94,8 +107,8 @@
             </video>
         </footer>
         <hr>
-        <h1>After meeting questions</h1>
         <form>
+            <h1>After meeting questions</h1>
             <fieldset>
                 <legend>General Information</legend>
                 <label>Name: </label><br>
