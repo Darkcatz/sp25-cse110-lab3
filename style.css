@@ -45,12 +45,11 @@ a {
     width: inherit;
     max-width: 200px;
     max-height: 50px;
-    &:hover {
-        background-color: aquamarine;
-    }
 }
 
-
+a:hover {
+    background-color: aquamarine;
+}
 
 a:active {
     background-color: aqua;
@@ -74,21 +73,22 @@ h1:has(+ h3){
 /* Agenda and check in style*/
 .agenda-checkin{
     align-items: center;
+    & > section {
+        background-color: color(display-p3 1 0.5 0 / .5);
+        border: 1px solid color-mix(srgb, plum, #f00);
+        border-radius: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin: 1rem auto;
+        max-width: 800px;
+        display: inline-block;
+        position: relative;
+    }
 }
 
-.agenda-checkin section {
-    background-color: color(display-p3 2 0.5 0 / .5);
-    border: 1px solid color-mix(in srgb, plum, #f00);
-    border-radius: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin: 1rem auto;
-    max-width: 800px;
-    display: inline-block;
-    position: relative;
-}
+
 a.link{
     font-size: 20px;
 }
@@ -146,7 +146,7 @@ button {
 
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
-    font-weight: 400in;
+    font-weight: 400px;
     font-style: normal;
     color: hsl(231, 91%, 66%);
 }
