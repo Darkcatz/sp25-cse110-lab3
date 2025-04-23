@@ -3,7 +3,7 @@
     --fallback-font: 'Arial', sans-serif;
 }
 
-body {
+* {
     font-family: var(--fallback-font);
 }
 
@@ -25,6 +25,10 @@ header {
     margin-top: 50px;
 }
 
+h1[class~="bebas-neue-regular"]{
+    font-size: 100px;
+}
+
 nav{
     text-decoration: none;
     margin: auto;
@@ -41,14 +45,19 @@ a {
     width: inherit;
     max-width: 200px;
     max-height: 50px;
+    &:hover {
+        background-color: aquamarine;
+    }
 }
 
-a:hover {
-    background-color: aquamarine;
-}
+
 
 a:active {
     background-color: aqua;
+}
+
+h1:has(+ h3){
+    margin-bottom: 0;
 }
 /* Header style end */
 
@@ -80,13 +89,12 @@ a:active {
     display: inline-block;
     position: relative;
 }
-
-/* Misc Style */
-video{
-    max-width: 100%;
+a.link{
+    font-size: 20px;
 }
 
-img {
+/* Misc Style */
+video, img{
     max-width: 100%;
     height: auto;
     border: 3px solid teal;
@@ -94,7 +102,15 @@ img {
     margin: 1rem 0;
 }
 
-details {
+summary + p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 ~ p{
+    font-size: 20px;
+}
+
+section > details {
     margin: 1rem 0;
     padding: 1rem;
     border: 1px dashed darkgray;
